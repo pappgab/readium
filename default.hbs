@@ -20,8 +20,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{meta_title}}">
     <meta name="twitter:description" content="{{meta_description}}">
-    <meta name="twitter:site" content="http://mark-read.info"> <!-- Change this to your URL -->
-<meta name="twitter:creator" content="@MarkReadM"> <!-- Change this to your Twitter Handel -->
+    <meta name="twitter:site" content="http://twitter.com/pappgab">
+    <meta name="twitter:creator" content="@pappgab">
     <meta name="google-site-verification" content="">
     <meta property="fb:admins" content="">
     <meta property="og:type" content="article">
@@ -37,7 +37,23 @@
     <link rel="stylesheet" type="text/css" media="print" href="{{asset "css/print.css"}}" />
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     {{! Ghost outputs important style and meta data with this tag }}
+   
     {{ghost_head}}
+    
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55632638-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+    <!-- End of Google Analytics -->
+
+    
 </head>
 <body class="{{body_class}}">
 
@@ -55,17 +71,6 @@
     <script src="{{asset "js/highlight.pack.js"}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
-    <script>
-        
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-48376090-1', 'mark-read.info'); 
-      ga('send', 'pageview');
-    
-    </script>
 
 </body>
 </html>
